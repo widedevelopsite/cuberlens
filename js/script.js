@@ -1,4 +1,7 @@
-  // Mobile menu handling
+window.addEventListener('DOMContentLoaded', () => {
+  document.querrySelector('hamburger').click();
+});
+// Mobile menu handling
   const hamburger = document.querySelector('.hamburger');
   const navbar = document.querySelector('.nav-links');
 
