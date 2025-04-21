@@ -1,3 +1,7 @@
+#loginBtn.hidden {
+  display: none;
+  pointer-events: none;
+}
 /* Base styles */
  :root {
     --primary-bg: #0a0a0a;
