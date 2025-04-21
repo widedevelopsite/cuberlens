@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://hafizmms.netlify.app/ -->
+<html lang="en" data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberLens Photography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://hafizmms.netlify.app/favicon.ico">
+</head>
+
+<body>
+    <!-- Notification Container -->
+    <div id="notification" class="notification" style="display: none;"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="https://hafizmms.netlify.app/#" class="logo">Cyber Lens Studio</a>
+        </div>
+        <div class="nav-links">
+            <a href="https://hafizmms.netlify.app/#home" class="">Home</a>
+            <a href="https://hafizmms.netlify.app/#about">About Us</a>
+            <a href="https://hafizmms.netlify.app/#contact">Contact Us</a>
+            <a href="https://hafizmms.netlify.app/#gallery" class="active">Gallery</a>
+
+            <but class="auth-buttons">
+                <button id="loginBtn" class="nav-button">Login</button>
+                <button id="signupBtn" class="nav-button">Sign Up</button>
+                <div id="userProfile" style="display: none;">
+                    <span class="profile-name"></span>
+                    <button id="logoutBt" class="nav-button" style="display: table-column-group;">Logout</button>
+                    <a href="./CyberLens Photography_files/IMG-20240120-WA0002.jpg" class="admin-link" style="display: none;">Admin Panel</a>
+            
+        </div>
+        </but></div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="neon-text">Capture Today</h1>
+            <p class="neon-subtext">Where Technology Meets Art</p>
+            <div class="hero-buttons">
+                <a href="https://hafizmms.netlify.app/#gallery" class="explore-gallery-btn">
+                    <span class="button-glow"></span>
+                    Explore Gallery
+                </a>
+            </div>
+        </div>
+        <div class="cyber-grid"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title neon-text">Gallery</h2>
+        <div class="gallery-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="portrait">Portrait</button>
+            <button class="category-btn" data-category="landscape">Landscape</button>
+            <button class="category-btn" data-category="cyber">Cyber</button>
+        </div>
+
+        <!-- Upload Button -->
+
+
+        <button class="category-btn upload-btn " id="uploadTrigger">
+            <i class="fas fa-upload"></i> Upload Your Pictures If You Want To Share With Us</button>
+
+
+
+
+        <div class="gallery-grid">
+            <!-- Gallery items will be dynamically added via JavaScript -->
+        <div class="gallery-item" data-category="portrait">
+              <div class="item-inner">
+                  <img src="images/IMG-20240120-WA0002.jpg" alt="Cyber Portrait">
+                  <div class="item-overlay">
+                      <div class="neon-border"></div>
+                      <h3>Cyber Portrait</h3>
+                      <p>Hafiz Mubarak Muhammad Siddique</p>
+                  </div>
+              </div>
+          </div>
+</div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content glass-effect">
+            <h2 class="section-title neon-text">Our Vision</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="vision-text">Blending cutting-edge technology with artistic vision to create tomorrow's
+                        memories today.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number neon-text">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number neon-text">5K+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number neon-text">100K+</span>
+                            <span class="stat-label">Photos Captured</span>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact form-header">
+        <div class="contact-container glass-effect form-header">
+            <h2 class="section-title neon-text">Connect With Us</h2>
+            <div class="contact-content ">
+                <div class="contact-info  ">
+                    <div class="info-card" style="width: 345px">
+                        <i class="fas fa-map-marker-alt neon-icon form-header"></i>
+                        <h3>Location</h3>
+                        <p>H-639-C Block-Q Muhala Model Town Lahore</p>
+                    </div>
+                    <div class="info-card" style="width: 345px">
+                        <i class="fas fa-phone neon-icon"></i>
+                        <h3>Phone</h3>
+                        <p>+92 327 8870076</p>
+                        <p>+92 327 8870077</p>
+                    </div>
+                    <div class="info-card" style="width: 345px">
+                        <i class="fas fa-envelope neon-icon"></i>
+                        <h3>Email</h3>
+                        <p>hmms82658753@gmail.com</p>
+                    </div>
+                </div>
+                <form class="contact-form modern-form" style="height: 670px">
+                    <div class="form-header ">
+                        <h3 class="neon-text">Send us a Message</h3>
+                        <p>We'd love to hear from you</p>
+
+                    </div>
+                    <div class="form-group floating info-card" style="width:350px">
+                        <input type="text" id="name" placeholder="Your Name">
+                        <label for="name"> Enter Your Name Here </label>
+
+                    </div>
+                    <div class="form-group floating info-card" style="width:350px">
+                        <input type="email" id="email" placeholder="Your Email">
+                        <label for="email">Enter Your Email Here </label>
+
+                    </div>
+                    <div class="form-group floating info-card" style="width:350px">
+                        <textarea id="message" placeholder="Your Message"></textarea>
+                        <label for="message">Enter Your Message Here </label>
+                        <div class="form-line"></div>
+
+                    </div>
+
+                    <button type="submit" class="submit-btn" style="width:350px ">
+                        <span class="btn-text button-glow"></span>
+                        Send Message 
+                     <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div><br><br><br><br><br>
+            <div class="copy neon-text">
+                © Copyright 2025 My Website. All Rights Reserved.
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 class="neon-text">Access Portal</h2>
+            <form id="loginForm" class="loginForm">
+                <div class="form-group ">
+                    <input type="email" id="loginEmail" placeholder="Enter Your Email Here" style="width: 100%">
+                    <label for="loginEmail"> </label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Enter Your Password Here" style="width: 100%">
+                    <label for="loginPassword"> </label>
+                </div>
+                <button type="submit" class="neon-button" style="float: center">Initialize Login</button>
+                <br>
+                <p style="justify-self: center;">New to CyberLens ? </p>
+                <a href="https://hafizmms.netlify.app/#" id="switchToSignup" class="neon-link" style="display: grid;">Create An Account</a>
+            </form>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 class="neon-text">Create Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" id="signupName" placeholder="Enter Your Name Here " style="width: 100%">
+                    <label for="signupName"> </label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="signupEmail" placeholder=" Enter Your Email Here" style="width: 100%">
+                    <label for="signupEmail"> </label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="signupPassword" placeholder=" Enter Your Password Here" style="width: 100%">
+                    <label for="signupPassword"> </label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" placeholder=" Enter Your Confirm Password Here" style="width: 100%">
+                    <label for="confirmPassword"> </label>
+                </div>
+                <button type="submit" class="neon-button">Initialize Account</button>
+                <br>
+                <p style="justify-self: center">Already have an account ? <br>
+                 <a href="https://hafizmms.netlify.app/#" id="switchToLogin" class="neon-link" style="display: grid;"> Access Portal</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Admin Panel</h2>
+            <div id="userList"></div>
+        </div>
+    </div>
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 class="neon-text">Upload Image</h2>
+            <div class="upload-container">
+                <input type="file" id="fileInput" accept="image/*" hidden="">
+                <label for="fileInput" class="upload-label">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Choose File</span>
+                </label>
+                <div id="previewContainer"></div>
+                <button id="confirmUpload" class="neon-button">Upload Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+
+
+</body></html>
