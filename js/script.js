@@ -19,6 +19,14 @@
   }
 
   document.addEventListener('DOMContentLoaded', function() {
+    // Simulate 4 hamburger clicks on first load
+let clicksDone = sessionStorage.getItem('hamburgerInitialized');
+if (!clicksDone && hamburger) {
+    for (let i = 0; i < 4; i++) {
+        hamburger.click();
+    }
+    sessionStorage.setItem('hamburgerInitialized', 'true');
+}
       // DOM Elements
       const loginModal = document.getElementById('loginModal');
       const signupModal = document.getElementById('signupModal');
